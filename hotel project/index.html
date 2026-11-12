@@ -15,12 +15,12 @@
 <body class="bg-[url(images/amer.jpg)] bg-no-repeat bg-cover w-full max-h-[550px]">
     <header>
         <nav class="bg-black/30 items-center">
-            <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center">
+            <div class="max-w-7xl mx-auto flex flex-nowrap justify-between items-center">
                 <div class="w-[140px] md:w-[180px] lg:w-[200px]">
                     <img src="images/WhatsApp_Image_2026-11-07_at_1.47.26_PM-removebg-preview.png" alt="">
                 </div>
                 <nav class="hidden md:block">
-                    <ul class="flex flex-wrap justify-center gap-3 lg:gap-8 text-white text-sm lg:text-xl">
+                    <ul class="flex flex-nowrap justify-center gap-2 lg:gap-5 text-white text-sm lg:text-lg">
                         <li><a href="#">Home</a></li>
                         <li><a href="#">About</a></li>
                         <li><a href="#">Our Rooms</a></li>
@@ -30,9 +30,18 @@
                         <li><a href="#">Contact</a></li>
                     </ul>
                 </nav>
-                <button
-                    class="bg-yellow-500 rounded-4xl text-white font-bold p-2 mr-2 sm:mr-5 hover:cursor-pointer text-xs sm:text-sm lg:text-base">
-                    <i class="fa-regular fa-calendar"></i> Book Now -></button>
+                <div class="flex items-center gap-4">
+
+                    <button
+                        class="bg-yellow-500 rounded-4xl text-white font-bold p-2 hover:cursor-pointer text-xs sm:text-sm md:text-base hidden md:block">
+                        <i class="fa-regular fa-calendar"></i> Book Now ->
+                    </button>
+
+                    <button class="p-2 text-yellow-400 text-2xl hidden sm:block">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+
+                </div>
             </div>
         </nav>
     </header>
@@ -80,40 +89,42 @@
             <h1 class="font-bold">Word-Class Amenities for a Comfortable Stay</h1>
         </div>
         <nav class=" grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-7 justify-items-center">
-            <div class="  p-3 w-[250px] h-[110px] rounded-md text-center text-shadow-2xs bg-orange-200">
+            <div class="  p-3 w-full max-w-[250px] h-[110px] rounded-md text-center text-shadow-2xs bg-orange-200">
                 <div class="text-yellow-600 text-2xl "><i class="fa-solid fa-couch"></i></div>
                 <h1 class="font-bold text-2xl">Luxury Rooms</h1>
                 <h2 class="font-bold text-gray-600">with Modern Comfort</h2>
             </div>
-            <div class="  p-3 w-[250px] h-[110px] rounded-md text-center  text-shadow-2xs bg-orange-200 ">
+            <div class=" p-3 w-full max-w-[250px] h-[110px] rounded-md text-center text-shadow-2xs bg-orange-200 ">
                 <div class="text-yellow-600 text-2xl "><i class="fa-solid fa-utensils"></i></div>
                 <h1 class="font-bold text-2xl">Restaurant</h1>
                 <h2 class="font-bold text-gray-600">Delicious</h2>
             </div>
-            <div class="  p-3 w-[250px] h-[110px] rounded-md text-center  text-shadow-2xs bg-orange-200 ">
+            <div class=" p-3 w-full max-w-[250px] h-[110px] rounded-md text-center text-shadow-2xs bg-orange-200">
                 <div class="text-yellow-600 text-2xl "><i class="fa-solid fa-wifi"></i></div>
                 <h1 class="font-bold text-2xl">Free Wi-Fi</h1>
                 <h2 class="font-bold text-gray-600">Always Connected</h2>
             </div>
-            <div class=" p-3 w-[250px] h-[110px] rounded-md text-center text-shadow-2xs bg-orange-200 ">
+            <div class=" p-3 w-full max-w-[250px] h-[110px] rounded-md text-center text-shadow-2xs bg-orange-200 ">
                 <div class="text-yellow-600 text-2xl"><i class="fa-solid fa-car"></i></div>
                 <h1 class="font-bold text-2xl">Parking</h1>
                 <h2 class="font-bold text-gray-600">Safe & Secure</h2>
             </div>
         </nav>
-        <nav class="p-1 sm:p-5 my-5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-5">
-            <div class="w-140 h-80 rounded-lg bg-cover bg-no-repeat bg-[url(images/hotel.jpg)]  text-shadow-2xs ">
+        <nav class="p-2 sm:p-5 my-5 grid grid-cols-1 md:grid-cols-2 gap-5">
+            <div class="w-full h-80 rounded-lg bg-cover bg-center bg-no-repeat bg-[url(images/hotel.jpg)] ">
             </div>
-            <div class=" w-full  sm:text-center md:text-start lg:text-start">
-                <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold text-shadow-2xs text-orange-600">About Our Hotel</h1>
-                <p class="font-bold text-sm sm:text-base my-3 ">Hotel Stay Sphare is a perfect blend of luxury, comfart and traditional
+            <div class=" w-full text-center md:text-start">
+                <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold text-shadow-2xs text-orange-600 ">About Our Hotel
+                </h1>
+                <p class="font-bold text-sm sm:text-base my-3 ">Hotel Stay Sphare is a perfect blend of luxury, comfart
+                    and traditional
                     hospitality. Our hotel offers
                     elegant rooms, delicious cuisine and top-notch facilities to make your stay memorable.</p>
                 <h1 class="">-> Comfortable Food & Spacious Rooms</h1>
                 <h1 class="">-> Hygienic Food & Cozy Ambience</h1>
                 <h1 class="">-> ldeal for Family, Business & Events</h1>
                 <button
-                    class=" text-1xl w-40 border border-black p-3 font-bold mx-4 my-3 rounded-4xl bg-yellow-500 border-none">Know
+                    class=" text-xl w-40 border border-black p-2 font-bold my-3 rounded-4xl bg-yellow-500 border-none">Know
                     More -></button>
             </div>
 
